@@ -9,8 +9,10 @@ public class testSelectionSort {
 	public void test() {
 		testPositive();
 		testNegative();
+	    /*
 	    testMixed();
 		testDuplicates();
+		*/
 		}
 	public testSelectionSort() {
 
@@ -52,7 +54,7 @@ public class testSelectionSort {
 		temp1.basicSelectionSort(arr);
 		assertTrue(arr == Sortedarr);
 		}
-
+/*
     public void testMixed(){
     	int[] arr = new int[5];
 		arr[0] = -8;
@@ -91,5 +93,5 @@ public class testSelectionSort {
 		assertTrue(arr == Sortedarr);
 
     	}
-
+*/
     }
