@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class testSelectionSort {
-	public SelectionSort temp1;
 	@Test
 	public void test() {
 		testPositive();
@@ -32,8 +31,9 @@ public class testSelectionSort {
 		Sortedarr[3] = 9;
 		Sortedarr[4] = 10;
 
-		temp1.basicSelectionSort(arr);
-		assertTrue(arr == Sortedarr);
+		SelectionSort temp1 = new SelectionSort();
+		arr = temp1.basicSelectionSort(arr);
+		assertArrayEquals(arr, Sortedarr);
 
 		}
 	public void testNegative(){
@@ -51,8 +51,9 @@ public class testSelectionSort {
 		Sortedarr[3] = -7;
 		Sortedarr[4] = -2;
 		
-		temp1.basicSelectionSort(arr);
-		assertTrue(arr == Sortedarr);
+		SelectionSort temp1 = new SelectionSort();
+		arr = temp1.basicSelectionSort(arr);
+		assertArrayEquals(arr, Sortedarr);
 		}
 /*
     public void testMixed(){
