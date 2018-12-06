@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class testSelectionSort {
-	public SelectionSort temp1;
 	@Test
 	public void test() {
 		/*
@@ -71,8 +70,9 @@ public class testSelectionSort {
 		Sortedarr[3] = 7;
 		Sortedarr[4] = 10;
 
+		SelectionSort temp1 = new SelectionSort();
 		temp1.basicSelectionSort(arr);
-		assertTrue(arr == Sortedarr);
+		assertArrayEquals(arr, Sortedarr);
     	}
 
     public void testDuplicates(){
@@ -90,7 +90,8 @@ public class testSelectionSort {
 		Sortedarr[3] = 10;
 		Sortedarr[4] = 10;
 		
+		SelectionSort temp1 = new SelectionSort();
 		temp1.basicSelectionSort(arr);
-		assertTrue(arr == Sortedarr);
+		assertArrayEquals(arr, Sortedarr);
     	}
     }
