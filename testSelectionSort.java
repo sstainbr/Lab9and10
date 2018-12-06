@@ -4,14 +4,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class testSelectionSort {
+	public SelectionSort temp1;
 	@Test
 	public void test() {
 		testPositive();
 		testNegative();
-		/*
 	    testMixed();
 		testDuplicates();
-		*/
 		}
 	public testSelectionSort() {
 
@@ -31,7 +30,9 @@ public class testSelectionSort {
 		Sortedarr[3] = 9;
 		Sortedarr[4] = 10;
 
-		assert (arr == Sortedarr);
+		temp1.basicSelectionSort(arr);
+		assertTrue(arr == Sortedarr);
+
 		}
 	public void testNegative(){
 		int[] arr = new int[5];
@@ -47,10 +48,11 @@ public class testSelectionSort {
 		Sortedarr[2] = -8;
 		Sortedarr[3] = -7;
 		Sortedarr[4] = -2;
-
-		assert (arr == Sortedarr);
+		
+		temp1.basicSelectionSort(arr);
+		assertTrue(arr == Sortedarr);
 		}
-	/*
+
     public void testMixed(){
     	int[] arr = new int[5];
 		arr[0] = -8;
@@ -66,7 +68,8 @@ public class testSelectionSort {
 		Sortedarr[3] = 7;
 		Sortedarr[4] = 10;
 
-		assert (arr == Sortedarr);
+		temp1.basicSelectionSort(arr);
+		assertTrue(arr == Sortedarr);
     	}
 
     public void testDuplicates(){
@@ -84,7 +87,9 @@ public class testSelectionSort {
 		Sortedarr[3] = 10;
 		Sortedarr[4] = 10;
 
-		assert (arr == Sortedarr);
+		temp1.basicSelectionSort(arr);
+		assertTrue(arr == Sortedarr);
+
     	}
-  */
+
     }
