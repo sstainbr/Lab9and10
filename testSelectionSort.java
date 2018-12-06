@@ -8,10 +8,8 @@ public class testSelectionSort {
 	public void test() {
 		testPositive();
 		testNegative();
-	    /*
-	    testMixed();
+		testMixed();
 		testDuplicates();
-		*/
 		}
 	public testSelectionSort() {
 
@@ -50,12 +48,11 @@ public class testSelectionSort {
 		Sortedarr[2] = -8;
 		Sortedarr[3] = -7;
 		Sortedarr[4] = -2;
-		
+
 		SelectionSort temp1 = new SelectionSort();
 		arr = temp1.basicSelectionSort(arr);
 		assertArrayEquals(arr, Sortedarr);
 		}
-/*
     public void testMixed(){
     	int[] arr = new int[5];
 		arr[0] = -8;
@@ -71,8 +68,9 @@ public class testSelectionSort {
 		Sortedarr[3] = 7;
 		Sortedarr[4] = 10;
 
+		SelectionSort temp1 = new SelectionSort();
 		temp1.basicSelectionSort(arr);
-		assertTrue(arr == Sortedarr);
+		assertArrayEquals(arr, Sortedarr);
     	}
 
     public void testDuplicates(){
@@ -90,9 +88,8 @@ public class testSelectionSort {
 		Sortedarr[3] = 10;
 		Sortedarr[4] = 10;
 
+		SelectionSort temp1 = new SelectionSort();
 		temp1.basicSelectionSort(arr);
-		assertTrue(arr == Sortedarr);
-
+		assertArrayEquals(arr, Sortedarr);
     	}
-*/
     }
