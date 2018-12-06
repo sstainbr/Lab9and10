@@ -7,16 +7,17 @@ public class testSelectionSort {
 	public SelectionSort temp1;
 	@Test
 	public void test() {
-		
+		/*
 		testPositive();
 		testNegative();
+		*/
 		testMixed();
 		testDuplicates();
 		}
 	public testSelectionSort() {
 
 	}
-	
+	/*
 	public void testPositive(){
 		int[] arr = new int[5];
 		arr[0] = 8;
@@ -53,7 +54,7 @@ public class testSelectionSort {
 		temp1.basicSelectionSort(arr);
 		assertTrue(arr == Sortedarr);
 		}
-		
+		*/
 
     public void testMixed(){
     	int[] arr = new int[5];
